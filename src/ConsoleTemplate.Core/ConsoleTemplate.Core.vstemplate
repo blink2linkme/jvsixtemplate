@@ -1,0 +1,21 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ConsoleTemplate.Core</Name>
+    <Description>This layer will act as a core layer of the application which will pave the infrastructure for the application.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ConsoleTemplate.Core</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ConsoleTemplate.Core.csproj" File="ConsoleTemplate.Core.csproj" ReplaceParameters="true">
+    <ProjectItem ReplaceParameters="true" TargetFileName="AppConstants.cs">Constants/AppConstants.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

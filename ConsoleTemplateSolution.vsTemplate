@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>ConsoleTemplate</Name>
+    <Description>This is a simple console application project template that does not intent to connect to database. This application can be use to connect to external entities like files or API's.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <!--<ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <DefaultName>ConsoleTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <RequiredFrameworkVersion>netcoreapp3.1</RequiredFrameworkVersion>
+    <MaxFrameworkVersion>net5.0</MaxFrameworkVersion>-->
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+    <SolutionFolder Name="src">
+    <ProjectTemplateLink ProjectName="$projectname$" ReplaceParameters="true">src/ConsoleTemplate/ConsoleTemplate.vstemplate</ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Domain" ReplaceParameters="true">src/ConsoleTemplate.Domain/ConsoleTemplate.Domain.vstemplate</ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Core" ReplaceParameters="true">src/ConsoleTemplate.Core/ConsoleTemplate.Core.vstemplate</ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Service" ReplaceParameters="true">src/ConsoleTemplate.Service/ConsoleTemplate.Service.vstemplate</ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Provider" ReplaceParameters="true">src/ConsoleTemplate.Provider/ConsoleTemplate.Provider.vstemplate</ProjectTemplateLink>
+    </SolutionFolder>
+    <SolutionFolder Name="tests">
+    <ProjectTemplateLink ProjectName="$projectname$.Core.UnitTests" ReplaceParameters="true">tests/UnitTests/ConsoleTemplate.Core.UnitTests/ConsoleTemplate.Core.UnitTests.vstemplate</ProjectTemplateLink>
+    <ProjectTemplateLink ProjectName="$projectname$.Service.UnitTests" ReplaceParameters="true">tests/UnitTests/ConsoleTemplate.Service.UnitTests/ConsoleTemplate.Service.UnitTests.vstemplate</ProjectTemplateLink>
+    </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
